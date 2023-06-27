@@ -89,6 +89,101 @@ export const Skills = () => {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Co - Curricular Activities </h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.<br></br> Lorem Ipsum has been the industry's standard
+                dummy text.
+              </p>
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                className="owl-carousel owl-theme skill-slider"
+              >
+                <div className="item">
+                  <h5>Vice President in AIESEC</h5>
+                </div>
+                <div className="item">
+                  <h5>“ShilpaNavodha” inter-school handcraft tournament</h5>
+                </div>
+                <div className="item">
+                  <h5>Age group Swimming Championship All Island</h5>
+                </div>
+                <div className="item">
+                  <h5>
+                    Central Province school’s swimming Championship (CEPASA)
+                  </h5>
+                </div>
+                <div className="item">
+                  <h5>
+                    Pushpadana Girls’ college commemorative education exhibition
+                    2017
+                  </h5>
+                </div>
+                <div className="item">
+                  <h5>
+                    Pushpadana Girls’ college “KalaaUlela” Dancing Tournament
+                    2013 and 2014
+                  </h5>
+                </div>
+                <div className="item">
+                  <h5>“Save our Rainforest” Art Competition 2015</h5>
+                </div>
+                <div className="item">
+                  <h5>Organized annual Commerce Day for the term 2017-2018</h5>
+                </div>
+              </Carousel>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Memberships </h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.<br></br> Lorem Ipsum has been the industry's standard
+                dummy text.
+              </p>
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                className="owl-carousel owl-theme skill-slider"
+              >
+                <div className="item">
+                  <h5>
+                    Member of the junior prefect court of the college in the
+                    academic year 2009
+                  </h5>
+                </div>
+                <div className="item">
+                  <h5>Member of the Commerce Society 2017 - 2018</h5>
+                </div>
+                <div className="item">
+                  <h5>Member of the college dancing group</h5>
+                </div>
+                <div className="item">
+                  <h5>Member of the college swimming team</h5>
+                </div>
+                <div className="item">
+                  <h5>Member of Sri Lanka Girl Guide Association</h5>
+                </div>
+                <div className="item">
+                  <h5>Member of the Astronomical Society 2014 – 2015</h5>
+                </div>
+                <div className="item">
+                  <h5>Member of the College ICT Club 2015 - 2016</h5>
+                </div>
+                <div className="item">
+                  <h5>Member of the College Media Unit 2017- 2018</h5>
+                </div>
+              </Carousel>
+            </div>
+          </div>
+        </div>
       </div>
       <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
