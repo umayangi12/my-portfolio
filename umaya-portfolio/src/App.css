@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #030730 !important;
+  background-color: #000000fd !important;
   color: #fff !important;
   font-family: "Centra", sans-serif !important;
 }
@@ -104,7 +104,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #030730;
+  background-color: #1818187e;
 }
 nav.navbar a.navbar-brand {
   width: 9%;
@@ -189,7 +189,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #030730;
+  color: #1818187e;
 }
 .navbar-text button:hover::before {
   content: "";
@@ -247,7 +247,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("./assets/img/banner.jpg");
+  background-image: url("./assets/img/bg.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -513,7 +513,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input:focus,
 .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
-  color: #030730;
+  color: #1818187e;
 }
 .contact form input::placeholder,
 .contact form textarea::placeholder {
@@ -523,7 +523,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form input:focus::placeholder,
 .contact form textarea:focus::placeholder {
-  color: #030730;
+  color: #1818187e;
   opacity: 0.8;
 }
 .contact form button {
@@ -546,7 +546,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button::before {
   content: "";
-  background: #030730;
+  background: #1818187e;
   width: 0;
   height: 100%;
   position: absolute;
@@ -570,7 +570,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .newsletter-bx {
   background: #ffffff;
   border-radius: 55px;
-  color: #030730;
+  color: #1818187e;
   padding: 85px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
