@@ -247,7 +247,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("./assets/img/banner-bg.png");
+  background-image: url("./assets/img/banner.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -258,10 +258,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 8px 10px;
   background: linear-gradient(
     90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
+    rgba(16, 34, 125, 0.5) -5.91%,
+    rgba(170, 104, 190, 0.5) 111.58%
   );
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(123, 129, 149, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -314,7 +314,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 .txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
+  border-right: 0.08em solid #9f6e6e;
 }
 
 /* css for skills */
