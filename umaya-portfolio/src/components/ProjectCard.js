@@ -9,7 +9,7 @@ export const ProjectCard = ({ title, description, imgUrl, gitHubUrl }) => {
           <h5>{title}</h5>
           <span>{description}</span>
           <h5>
-            <a href={gitHubUrl}>{gitHubUrl}</a>
+            <a href={gitHubUrl}>Click me!</a>
           </h5>
         </div>
       </div>
