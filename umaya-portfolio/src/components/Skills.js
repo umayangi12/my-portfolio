@@ -34,12 +34,8 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
+              <h2 style={{ marginBottom: "40px" }}>Skills</h2>
+
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -92,12 +88,10 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Co - Curricular Activities </h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
+              <h2 style={{ marginBottom: "40px" }}>
+                Co - Curricular Activities{" "}
+              </h2>
+
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -142,12 +136,8 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Memberships </h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
+              <h2 style={{ marginBottom: "40px" }}>Memberships </h2>
+
               <Carousel
                 responsive={responsive}
                 infinite={true}

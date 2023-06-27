@@ -60,9 +60,12 @@ export const Banner = () => {
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              sjfjsd jifsdfn sfdfdkf jsdfdkfsdf sdfkdfjsd jsfdsdsfj dfkdjsfksdfj
-              fjsdkfjsdk jfksdjf ksfjefef sdfjsdkfjfksdjfsdk jkfdskfj jsfjfk
-              jksd
+              To secure a challenging position within a progressive and dynamic
+              organization, leveraging my skills and talents to contribute
+              towards the achievement of the organization's vision and goals.
+              Simultaneously, I aim to further develop my professional abilities
+              and gain valuable work experience that aligns with both the
+              organization's objectives and my personal career goals.
             </p>
             <button onClick={() => console.log("Connect!")}>
               Let's Connect <ArrowRightCircle size={25} />
