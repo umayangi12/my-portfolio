@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import NavIcon1 from "../assets/img/nav-icon1.svg";
+import NavIcon2 from "../assets/img/nav-icon2.svg";
+import NavIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Footer = () => {
   return (
@@ -19,14 +19,14 @@ export const Footer = () => {
             style={{ marginTop: "40px" }}
           >
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="Icon" />
+              <a href="https://www.linkedin.com/in/indrachapa-ekanayake">
+                <img src={NavIcon1} alt="LinkenIn" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="Icon" />
+              <a href="https://www.facebook.com/umaya.ekanayake.7?mibextid=ZbWKwL">
+                <img src={NavIcon2} alt="facebook" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="Icon" />
+              <a href="https://medium.com/@umayangi1999">
+                <img src={NavIcon3} alt="medium" />
               </a>
             </div>
             <p>Copyright 2023. All Rights Reserved</p>
