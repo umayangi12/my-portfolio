@@ -8,9 +8,11 @@ export const ProjectCard = ({ title, description, imgUrl, gitHubUrl }) => {
         <div className="proj-txtx">
           <h5>{title}</h5>
           <span>{description}</span>
-          <h5>
-            <a href={gitHubUrl}>Click me!</a>
-          </h5>
+          {gitHubUrl && (
+            <h5>
+              <a href={gitHubUrl}>Click me!</a>
+            </h5>
+          )}
         </div>
       </div>
     </Col>
