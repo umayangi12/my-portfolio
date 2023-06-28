@@ -1,40 +1,31 @@
 const express = require("express");
-const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
-// server used to send emails
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "********@gmail.com",
-    pass: "",
+    user: "umayangi1999@gmail.com",
+    pass: process.env.EMAIL_PASS,
   },
 });
 
-//verifying whether running
 contactEmail.verify((error) => {
   if (error) {
     console.log(error);
   } else {
-    console.log("Ready to Send");
+    console.log("Ready to Send emails");
   }
 });
 
-//POST req
-router.post("/contact", (req, res) => {
-  const name = req.body.firstName + req.body.lastName;
-  const email = req.body.email;
-  const message = req.body.message;
-  const phone = req.body.phone;
+app.post("/contact", (req, res) => {
+  const { firstName, lastName, email, phone, message } = req.body;
+  const name = `${firstName} ${lastName}`;
   const mail = {
     from: name,
     to: "umayangi1999@gmail.com",
@@ -52,3 +43,5 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+
+app.listen(3000, () => console.log("Server Running"));

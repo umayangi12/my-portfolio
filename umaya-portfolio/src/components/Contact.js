@@ -25,24 +25,32 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    try {
+      const response = await fetch("http://localhost:3000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
+      });
+      const result = await response.json();
 
-    setButtonText("Send");
-    let result = response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
-    } else {
+      setFormDetails(formInitialDetails);
+      if (response.ok) {
+        setStatus({ success: true, message: "Message sent successfully" });
+      } else {
+        setStatus({
+          success: false,
+          message: "Oops! Something went wrong",
+        });
+      }
+    } catch (error) {
       setStatus({
         success: false,
         message: "Oops! Something went wrong",
       });
+    } finally {
+      setButtonText("Send");
     }
   };
 
@@ -53,7 +61,7 @@ export const Contact = () => {
           <Col md={6}>
             <img src={contactImg} alt="Contact Us" />
           </Col>
-          <Col md={6}>
+          {/* <Col md={6}>
             <h2>Get in Touch!</h2>
             <form onSubmit={handleSubmit}>
               <Row>
@@ -107,12 +115,14 @@ export const Contact = () => {
                       className={
                         status.success === false ? "danger" : "success"
                       }
-                    ></p>
+                    >
+                      {status.message}
+                    </p>
                   </Col>
                 )}
               </Row>
             </form>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>
