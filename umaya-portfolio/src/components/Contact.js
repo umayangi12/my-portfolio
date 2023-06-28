@@ -56,7 +56,7 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
-      <Container>
+      <Container style={{ height: "300px" }}>
         <Row className="align-items-center">
           <Col md={6}>
             <img src={contactImg} alt="Contact Us" />

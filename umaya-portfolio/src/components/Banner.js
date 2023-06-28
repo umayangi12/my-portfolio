@@ -67,9 +67,11 @@ export const Banner = () => {
               and gain valuable work experience that aligns with both the
               organization's objectives and my personal career goals.
             </p>
-            <button onClick={() => console.log("Connect!")}>
-              Let's Connect <ArrowRightCircle size={25} />
-            </button>
+            <a href="#connect" style={{ textDecoration: "none" }}>
+              <button onClick={() => console.log("Connect!")}>
+                Let's Connect <ArrowRightCircle size={25} />
+              </button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Headder Img" />
