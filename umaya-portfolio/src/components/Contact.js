@@ -62,10 +62,10 @@ export const Contact = () => {
     <section className="contact" id="connect">
       <Container style={{ height: "300px" }}>
         <Row className="align-items-center">
-          <Col md={6}>
+          <Col sm={6} md={4}>
             <img src={contact} alt="Contact Us" />
           </Col>
-          <Col style={{ marginLeft: "230px" }}>
+          <Col sm={6} md={4} style={{ marginLeft: "230px" }}>
             <div
               className="container contact-container"
               style={{ marginBottom: "10px" }}
