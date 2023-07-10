@@ -9,9 +9,9 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
     "Web Developer",
+    "Full-Stack Developer",
     "Web Designer",
     "Mobile Application Developer",
-    "UI/UX Designer",
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(3000 - Math.random() * 100);
@@ -57,8 +57,11 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm Umayangi `}
-              <span className="wrap">{text}</span>
+              {`Hi I'm Umayangi, `}
+              <h1>
+                {`A `}
+                <span className="wrap">{text}</span>
+              </h1>
             </h1>
             <p>
               To secure a challenging position within a progressive and dynamic
