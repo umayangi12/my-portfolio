@@ -3,6 +3,7 @@ import logo from "../assets/img/umayaLogo2.png";
 import NavIcon1 from "../assets/img/nav-icon1.svg";
 import NavIcon2 from "../assets/img/nav-icon2.svg";
 import NavIcon3 from "../assets/img/nav-icon3.svg";
+import NavIcon4 from "../assets/img/nav-icon4.svg";
 
 export const Footer = () => {
   return (
@@ -27,6 +28,9 @@ export const Footer = () => {
               </a>
               <a href="https://medium.com/@umayangi1999">
                 <img src={NavIcon3} alt="medium" />
+              </a>
+              <a href="https://github.com/umayangi12">
+                <img src={NavIcon4} alt="github" />
               </a>
             </div>
             <p>Copyright 2023. All Rights Reserved</p>
