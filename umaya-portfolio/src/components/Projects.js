@@ -5,6 +5,7 @@ import projImg3 from "../assets/img/clothingStore.jpg";
 import projImg4 from "../assets/img/simplebooks.png";
 import projImg5 from "../assets/img/socialMediaApp.png";
 import projImg6 from "../assets/img/healthCare.png";
+import projImg7 from "../assets/img/agar.png";
 import comingSoon from "../assets/img/comingSoon.jpg";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -13,12 +14,11 @@ export const Projects = () => {
   const projectsTab1 = [
     {
       title:
-        "MERN STACK - COMPLETE APPLICATION (MONGODB, EXPRESS, REACT, NODE JS)",
+        "AgarRiskPro® - Device based approach to detect diseases and solution providing system",
       description:
-        "Created a web-based Management System with a team of 8, that assists managers and other authorized employees to handle and administrate the necessary workflow of a well-known Cargo Delivery Company in Sri Lanka.",
-      imgUrl: projImg1,
-      gitHubUrl:
-        "https://github.com/SLIIT-FacultyOfComputing/itp_project-itp2021_s2_b01_g13.git",
+        "IoT device tracks temp, humidity, NPK, wind. App detects diseases, aids farmers with tailored solutions.",
+      imgUrl: projImg7,
+      gitHubUrl: "https://research-project-website-hzby.vercel.app/",
     },
     {
       title: "HEALTH CARE APP USING ANDROID STUDIO AND MONGODB",
@@ -35,8 +35,8 @@ export const Projects = () => {
       imgUrl: projImg3,
       gitHubUrl: "https://github.com/SE4020/assignment-02-umayangi12.git",
     },
-  ];  
-  
+  ];
+
   const projectsTab2 = [
     {
       title: "PROJECT SIMPLEBOOKS",
@@ -58,6 +58,18 @@ export const Projects = () => {
         "Designed and created a Healthcare Management System using React, that has functionalities like patient management, doctor management and pharmact management.",
       imgUrl: projImg6,
       gitHubUrl: "https://github.com/umayangi12/SPMassignment.git",
+    },
+  ];
+
+  const projectsTab3 = [
+    {
+      title:
+        "MERN STACK - COMPLETE APPLICATION (MONGODB, EXPRESS, REACT, NODE JS)",
+      description:
+        "Created a web-based Management System with a team of 8, that assists managers and other authorized employees to handle and administrate the necessary workflow of a well-known Cargo Delivery Company in Sri Lanka.",
+      imgUrl: projImg1,
+      gitHubUrl:
+        "https://github.com/SLIIT-FacultyOfComputing/itp_project-itp2021_s2_b01_g13.git",
     },
   ];
 
@@ -99,13 +111,18 @@ export const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                  <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Row style={{ marginTop: "40px" }}>
+                    {projectsTab3.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                  {/* <div style={{ display: "flex", justifyContent: "center" }}>
                     <img
                       src={comingSoon}
                       alt="Header Img"
                       style={{ width: "400px", height: "400px" }}
                     />
-                  </div>
+                  </div> */}
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>

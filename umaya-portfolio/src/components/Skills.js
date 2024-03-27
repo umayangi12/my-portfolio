@@ -109,6 +109,12 @@ export const Skills = () => {
                   <h5>Vice President in AIESEC</h5>
                 </div>
                 <div className="item">
+                  <h5>
+                    Author, International Conference on Advancements in
+                    Computing 2023{" "}
+                  </h5>
+                </div>
+                <div className="item">
                   <h5>“ShilpaNavodha” inter-school handcraft tournament</h5>
                 </div>
                 <div className="item">
