@@ -58,6 +58,10 @@ export const Skills = () => {
                   <h5>Vue JS</h5>
                 </div>
                 <div className="item">
+                  <img src={meter2} alt="Image" />
+                  <h5>GoLang</h5>
+                </div>
+                <div className="item">
                   <img src={meter1} alt="Image" />
                   <h5>HTML</h5>
                 </div>
@@ -76,6 +80,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={meter3} alt="Image" />
                   <h5>MongoDB</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="Image" />
+                  <h5>PostgreSQL</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Image" />
